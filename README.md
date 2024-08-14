@@ -37,6 +37,8 @@ BMP files are not used much in computing though for the simple reason that they 
 
 Technically, what we need to do in a bare metal environment to “build” a BMP file is just open a memory section (“f_open” command in the fat_fs library) and then write to this file the BMP header (CAUTION: It depends on resolution, what the header exactly will be!), followed by the image data (here, 16-bit RGB565). Once the adequate number of pixels are transferred into the memory buffer, the file can be closed with “f_close” and that’s pretty much it.
 
+For observing the contents of the iamge file in hex, one will need either to install a hex/binary editor (an editor that opens the file content as binary data, not ASCII) or use an online tool to do so (such as https://hexed.it/).
+
 ## User guide
 One merely needs to push the blue push button on the disco board to capture the image shown on the screen. The result will be a 240x240 resolution BMP file on the SDcard.
 
