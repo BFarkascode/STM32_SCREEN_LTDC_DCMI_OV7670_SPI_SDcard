@@ -1,2 +1,2 @@
 # STM32_SCREEN_LTDC_DCMI_OV7670_SPI_SDcard
-Fully functional digital camera solution on a STM32_F429_DISCO board
+Bare metal project for a fully functional digital camera using STM32. This is the last project in a sequence of projects.  
